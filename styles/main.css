@@ -1,0 +1,45 @@
+/*-- Reset all margin and padding on page for a clean slate for design--*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*------------------Navigation Styles-------------------------------*/
+
+.topnav {
+	border-bottom: 1px solid #F1F4F6;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: .9rem;
+	font-family: 'Varela Round', sans-serif;
+	color: #879598;
+	margin: 25px 16px;
+}
+
+.topnav a:hover {
+	color: #4b5658;
+	transition: color .3s ease-in;
+}
+
+.topnav .free-Trial {
+	color: #6AD289;
+}
+
+.topnav .free-Trial:hover {
+	color: #34ad58;
+	transition: color .3s ease-in;
+}
+
+.topnav .icon {
+	display: none;
+}
