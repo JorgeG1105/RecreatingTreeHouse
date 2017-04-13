@@ -8,22 +8,34 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/*------------------Navigation Styles-------------------------------*/
+/*------------------Brand Styles-------------------------------*/
+.topnav .brand {
+	color: #5FCF80;
+	float: left;
+	font-size: 1.3rem;
+	margin-left: 80px;
+}
 
+.topnav .brand:hover {
+	color: #34ad58;
+	transition: color .3s ease-in;
+}
+
+/*------------------Navigation Styles-------------------------------*/
 .topnav {
 	border-bottom: 1px solid #F1F4F6;
+	position: fixed;
+	width: 100%;
 	overflow: hidden;
 }
 
 .topnav a {
-	float: left;
-	display: block;
-	text-align: center;
+	float: right;
 	text-decoration: none;
 	font-size: .9rem;
 	font-family: 'Varela Round', sans-serif;
 	color: #879598;
-	margin: 25px 16px;
+	margin: 25px 16px 25px 30px;
 }
 
 .topnav a:hover {
@@ -33,6 +45,7 @@ body {
 
 .topnav .free-Trial {
 	color: #6AD289;
+	margin-right: 30px;
 }
 
 .topnav .free-Trial:hover {
@@ -43,3 +56,5 @@ body {
 .topnav .icon {
 	display: none;
 }
+
+/*------------------Body styles-------------------------------*/
