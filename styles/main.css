@@ -8,6 +8,13 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/*------------------Custom Flexbox Classes-------------------------------*/
+	.row {display: flex;} /* Only for parent divs */
+
+	.col {
+		flex: 1;
+	}
+
 /*------------------treehouse Brand Styles-------------------------------*/
 .topnav .brand {
 	color: #5FCF80;
@@ -104,7 +111,6 @@ body {
 
 .learnAndGetStarted {
 	background-color: #5FCF80;
-	display: flex;
 	padding-top: 80px;
 	padding-bottom: 80px;
 
@@ -114,8 +120,13 @@ body {
 	color: white;
 	flex: 1;
 	padding: 20px;
-	margin-top: 0px;
 }
+
+
+.learnH1 {
+	font-size: 45px;
+}
+
 
 @media screen and (max-width: 600px){
 
@@ -129,9 +140,6 @@ body {
 }
 
 
-.learnH1 {
-	font-size: 45px;
-}
 
 /*------------------Get started Form styles-------------------------------*/
 
@@ -139,6 +147,7 @@ body {
 	flex: 1;
 	background-color: white;
 	margin-right: 30px;
+	margin-top: 30px;
 	border-radius: 5px;
 }
 
@@ -191,4 +200,51 @@ input {
 
 .claimFreeTrial:hover {
 	background-color: #41C468;
+}
+
+/*------------------How Treehouse Works Section -------------------------------*/
+
+.howTreehouseWorksTitle {
+	align-items: center;
+	margin-top: 80px;
+	padding: 20px;
+	text-align: center;
+}
+
+.howTreehouseWorksTitle p {
+	color: #717F8D;
+}
+
+.learnImg {
+	background: #FBAEA8;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+.learnText p  {
+	color: #717F8D;
+	margin: 20px;
+	text-align: center;
+}
+
+.learnText h3 {
+	margin: 20px;
+	text-align: center;
+}
+
+.practiceImg {
+	background: #C1E0F5;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+.earnImg {
+	background: #B8F5D2;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+	.row {flex-direction: column;}
+
 }
